@@ -2,62 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auxlia — Serenity Abroad</title>
+  <title>Auxlia – Serenity Abroad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="logo" aria-label="Auxlia Logo"></div>
-      <h1 class="title">Auxlia</h1>
-      <p class="tagline">Serenity Abroad</p>
-    </div>
-    <div class="scroll-indicator">↓</div>
-  </section>
+  <!-- Header with login icon -->
+  <header class="site-header">
+    <button class="login-icon" aria-label="Client login (coming soon)">
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="8" r="3.2"></circle>
+        <path d="M6 18.4C6.8 15.8 9.1 14 12 14c2.9 0 5.2 1.8 6 4.4"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="text">
-      <h2>Human Travel Assistance</h2>
-      <p>Auxlia is redefining reassurance in motion. We bridge the gap between technology and care — a quiet presence when the unexpected happens. Wherever you are, we're here to help you feel grounded abroad.</p>
-    </div>
-    <div class="shape"></div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="services">
-    <h2>How It Works</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Support</h3>
-        <p>On-call guidance for travel hiccups, big or small.</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <h1 class="title">
+          Auxl<span class="idot">&#305;</span>a
+        </h1>
+        <div class="wordmark-block">
+          <p class="tagline">Serenity Abroad</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Connection</h3>
-        <p>A real human link in a world of automated replies.</p>
-      </div>
-      <div class="card">
-        <h3>Ease</h3>
-        <p>Quiet confidence that someone’s got your back.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Let’s Stay Connected</h2>
-    <p>We’re building travel with a human pulse.</p>
-    <a href="mailto:hello@auxlia.com" class="contact-button">Contact Us</a>
-  </section>
+      <a href="#about" class="scroll-zone">
+        <span class="scroll-indicator">⌄</span>
+      </a>
+    </section>
 
-  <!-- Footer -->
+    <!-- ABOUT / CORE PROMISE -->
+    <section class="about" id="about">
+      <div class="text">
+        <h2>What if you planned for the unexpected?</h2>
+
+        <p>
+          Auxlia has one goal, to help you live up to your journey’s potential.
+          Traveling can be unpredictable. Plans can change. Directions are not
+          always easy to follow. These moments complicate what should feel simple.
+        </p>
+
+        <p class="core-promise">
+          For the moments you didn't plan for, Auxlia is with you. <br>
+        </p> 
+
+        <p>
+          <br> We help you understand what is happening,
+          take your next step, and move through your trip without feeling overly-stressed.
+          Our goal is to offer clarity, confidence, and peace of mind. You don't have to be alone.
+        </p>
+      </div>
+
+      <div class="about-art" aria-hidden="true">
+        <div class="mark">
+          <div class="band band-a"></div>
+          <div class="band band-b"></div>
+          <div class="mark-wordblock">
+            <div class="mark-word">
+              Auxl<span class="idot">&#305;</span>a
+            </div>
+            <div class="mark-tagline">
+              Serenity Abroad
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section class="services" id="how">
+      <h2>What we offer</h2>
+      <p>
+        Support for the stress and logistics of traveling, especially the parts you didn't think you'd need help with.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Light support</h3>
+          <p>Preparations & check-ins for your comfort.</p>
+        </div>
+        <div class="card">
+          <h3>Steady support</h3>
+          <p>Extra assistance & guidance while traveling.</p>
+        </div>
+        <div class="card">
+          <h3>Full support</h3>
+          <p>Comprehensive support throughout your journey.</p>
+        </div>
+      </div>
+
+      <a href="services.html" class="explore-services">Explore services</a>
+
+      <!-- New quick links bubbles -->
+      <div class="about-buttons">
+         <a href="faq.html" class="about-pill">FAQs</a>
+         <a href="about.html" class="about-pill">About Auxlia</a>
+         <a href="resources.html" class="about-pill">Resources</a> 
+      </div>
+    </section>
+
+    <!-- CONTACT TEASER -->
+    <section class="contact" id="contact">
+      <h2>Say hello.</h2>
+      <p>
+        We're here to help. Reach out to learn more about how Auxlia can support your journey.
+      </p>
+      <a href="mailto:hello@auxlia.com" class="contact-button">Get in touch</a>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 Auxlia. All rights reserved.</p>
+    © 2025 Auxlia. All rights reserved.
   </footer>
-
 </body>
 </html>
