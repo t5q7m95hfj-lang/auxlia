@@ -257,7 +257,6 @@ body {
   font-size: 2rem;
   color: var(--aux-teal);
   margin-bottom: 1rem;
-  white-space: nowrap;
 }
 
 .about p {
