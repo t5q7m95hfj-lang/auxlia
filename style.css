@@ -777,13 +777,31 @@ footer {
 .services-intro-top {
   font-weight: 600;
   color: #e5e3ff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.0rem;
   font-size: 1.1rem;
 }
 
 .services-intro-bottom {
   color: rgba(255,255,255,0.9);
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* tighten hero spacing on mobile */
+  .services-hero {
+    padding: 4.2rem 8% 1.6rem;
+  }
+
+  /* bring the first card closer + center cards */
+  .services-tiers {
+    padding: 0 8% 2.4rem;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .service-card {
+    margin: 1.6rem auto 0;   /* centers each card in the column */
+  }
 }
 
 /* tier cards (services page) */
@@ -948,6 +966,7 @@ footer {
   color: #333;
 }
 
+/* little pill for the “Learn more here” link */
 /* FAQ pill button - center it nicely */
 .faq-pill-link {
   display: inline-block;
@@ -963,11 +982,6 @@ footer {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.faq-pill-link:hover {
-  background: var(--aux-teal);
-  color: #fff;
 }
 
 .faq-pill-link:hover {
@@ -1697,4 +1711,57 @@ footer a {
 .tier-refund {
   margin-top: 0.2rem;
   font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------
+   MOBILE FIXES — SERVICES PAGE + FAQ BUTTON
+   ------------------------------------------------------------ */
+
+/* Center the FAQ pill button on all pages */
+.faq-pill-link {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--aux-teal);
+  color: var(--aux-teal);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faq-pill-link:hover {
+  background: var(--aux-teal);
+  color: #fff;
+}
+
+/* ------------------------------------------------------------
+   SERVICES PAGE — MOBILE REFINEMENTS
+   ------------------------------------------------------------ */
+@media (max-width: 768px) {
+
+  /* Tighten spacing above the cards + center hero text */
+  .services-hero {
+    padding: 4rem 8% 1.6rem;  /* less vertical height */
+    text-align: center;
+  }
+
+  /* Bring service cards higher + fully center column */
+  .services-tiers {
+    padding: 0 8% 2.4rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ensures perfect centering */
+  }
+
+  /* Ensure each card stays centered */
+  .service-card {
+    margin: 1.6rem auto 0;
+    width: 100%;
+    max-width: 320px;   /* optional: keeps them tidy */
+  }
 }
