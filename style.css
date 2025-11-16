@@ -1530,3 +1530,74 @@ footer,
     font-size: 0.85rem;
   }
 }
+
+/* ---- Founder page mobile fixes ---- */
+
+@media (max-width: 768px) {
+
+  .founder-page {
+    padding-top: 5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(0,183,179,0.92) 0%,
+      rgba(0,196,171,0.92) 25%,
+      rgba(0,208,132,0.92) 55%,
+      rgba(0,181,240,0.92) 80%,
+      rgba(0,152,255,0.92) 100%
+    );
+  }
+
+  .founder-main {
+    padding: 1rem 1.2rem 3.5rem;
+  }
+
+  .founder-card {
+    padding: 1.6rem 1.3rem 2.1rem;
+    border-radius: 16px;
+  }
+
+  /* keep logo visible and clean */
+  .header-right {
+    padding-right: 1rem;
+  }
+
+  .site-logo {
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .logo-word,
+  .logo-tagline {
+    text-decoration: none !important;
+  }
+}
+
+/* ---- Mobile fixes for resource breathing circle ---- */
+
+@media (max-width: 768px) {
+
+  .breathing-circle {
+    width: 160px !important;
+    height: 160px !important;
+    margin: 1.4rem auto !important;
+  }
+}
+
+footer {
+  background: #1e1e1e !important;
+  color: white !important;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  footer nav a {
+    display: inline-block;
+    margin: 0.3rem 0.6rem;
+    white-space: nowrap;
+  }
+}
