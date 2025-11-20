@@ -890,6 +890,19 @@ footer a:hover,
   margin-bottom: 0.35rem;
 }
 
+/* Keep "What we can help with" on one line */
+.services-help-card h2 {
+  white-space: nowrap;
+}
+
+/* Prevent overflow on small screens */
+@media (max-width: 480px) {
+  .services-help-card h2 {
+    font-size: 1.25rem;
+    letter-spacing: 0.01em;
+  }
+}
+
 /* Small explanatory footnote under button */
 .retainer-footnote {
   margin-top: 0.75rem;
