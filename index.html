@@ -6,18 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <!-- Header with login icon -->
-  <header class="site-header">
-    <button class="login-icon" aria-label="Client login (coming soon)">
-      <svg viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="8" r="3.2"></circle>
-        <path d="M6 18.4C6.8 15.8 9.1 14 12 14c2.9 0 5.2 1.8 6 4.4"
-              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </button>
-  </header>
+<body>
 
   <main>
     <!-- HERO -->
@@ -36,88 +26,131 @@
       </a>
     </section>
 
-    <!-- ABOUT / CORE PROMISE -->
-    <section class="about" id="about">
-      <div class="text">
-        <h2>What if you planned for the unexpected?</h2>
+<!-- ABOUT / CORE PROMISE -->
+<section class="about" id="about">
+  <div class="text">
+    <h2>A little calm goes a long way.</h2>
 
-        <p>
-          Auxlia has one goal, to help you live up to your journey’s potential.
-          Traveling can be unpredictable. Plans can change. Directions are not
-          always easy to follow. These moments complicate what should feel simple.
-        </p>
+    <p>
+      Travel rarely goes exactly as planned. 
+      Clear support can make all the difference to help you feel steady and confident when away from home.
+    </p>
+  </div>
 
-        <p class="core-promise">
-          For the moments you didn't plan for, Auxlia is with you. <br>
-        </p> 
-
-        <p>
-          <br> We help you understand what is happening,
-          take your next step, and move through your trip without feeling overly-stressed.
-          Our goal is to offer clarity, confidence, and peace of mind. You don't have to be alone.
-        </p>
-      </div>
-
-      <div class="about-art" aria-hidden="true">
-        <div class="mark">
-          <div class="band band-a"></div>
-          <div class="band band-b"></div>
-          <div class="mark-wordblock">
-            <div class="mark-word">
-              Auxl<span class="idot">&#305;</span>a
-            </div>
-            <div class="mark-tagline">
-              Serenity Abroad
-            </div>
-          </div>
+  <div class="about-art" aria-hidden="true">
+    <div class="mark">
+      <div class="band band-a"></div>
+      <div class="band band-b"></div>
+      <div class="mark-wordblock">
+        <div class="mark-word">
+          Auxl<span class="idot">&#305;</span>a
+        </div>
+        <div class="mark-tagline">
+          Serenity Abroad
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- WHAT WE OFFER -->
-    <section class="services" id="how">
+
+    <!-- ===================================================== -->
+    <!--  WHY PEOPLE TURN TO AUXLIA (EMOTIONAL CONTEXT)        -->
+    <!--  This section lives directly under the About + globe  -->
+    <!--  It explains the emotional "why" in 3 very short lines-->
+    <!-- ===================================================== -->
+ <!-- =========================
+     WHY / SITUATIONS SECTION
+     ========================= -->
+<section class="situations">
+  <div class="situations-inner">
+
+    <h2>People turn to Auxlia when</h2>
+    <ul>
+    <li>they want clearer, more confident travel plans</li>
+    <li>in-the-moment human support matters</li>
+    <li>steady reassurance helps them move through their trip</li>
+    </ul>
+
+  </div>
+</section>
+
+<hr class="soft-divider">
+
+    <!-- ===================================================== -->
+    <!--  WHAT WE OFFER (PRACTICAL PREVIEW)                    -->
+    <!--  This section answers: "In practice, how can Auxlia   -->
+    <!--  support me?"                                         -->
+    <!--  It should stay light: 3 cards + short sentence +     -->
+    <!--  one button that leads to the full Services page.     -->
+    <!-- ===================================================== -->
+    <section class="services" id="offer">
+      <!-- Section heading (practical / neutral tone) -->
       <h2>What we offer</h2>
+
+      <!-- 
+        One short sentence explaining the kind of support.
+        You can tweak or replace this, but keep it to 1–2 lines max
+        so the section stays calm and easy to skim.
+      -->
       <p>
-        Support for the stress and logistics of traveling, especially the parts you didn't think you'd need help with.
+        Support for the parts of travel that become stressful or confusing
       </p>
 
+      <!-- 
+        Three cards: before / during / when plans change.
+        Each card is a light "bucket" of support, not a full description.
+        The Services page can go into more detail later.
+      -->
       <div class="cards">
+        <!-- Card 1: BEFORE YOU TRAVEL -->
         <div class="card">
-          <h3>Light support</h3>
-          <p>Preparations & check-ins for your comfort.</p>
+          <h3>Before you travel</h3>
+          <p>Reviewing intineraries, timing and connections. </p>
         </div>
+
+        <!-- Card 2: DURING YOUR TRIP -->
         <div class="card">
-          <h3>Steady support</h3>
-          <p>Extra assistance & guidance while traveling.</p>
+          <h3>During your trip</h3>
+          <p>Checking in, offering support and guidance.</p>
         </div>
+
+        <!-- Card 3: WHEN PLANS SHIFT -->
         <div class="card">
-          <h3>Full support</h3>
-          <p>Comprehensive support throughout your journey.</p>
+          <h3>When plans change</h3>
+          <p>Helping you assess your next step and keep calm.</p>
         </div>
       </div>
 
+      <!-- 
+        Call-to-action button.
+        This quietly invites people to learn more without pressure.
+        If you ever change your URL structure, just update the href.
+      -->
       <a href="services.html" class="explore-services">Explore services</a>
-
-      <!-- New quick links bubbles -->
-      <div class="about-buttons">
-         <a href="about.html" class="about-pill">About Auxlia</a>
-         <a href="faq.html" class="about-pill">FAQ</a>
-         <a href="resources.html" class="about-pill">Resources</a> 
-      </div>
     </section>
 
     <!-- CONTACT TEASER -->
-    <section class="contact" id="contact">
+    <section class="contact about-contact">
       <h2>Say hello.</h2>
-      <p>
-        We're here to help. Reach out to learn more about how Auxlia can support your journey.
-      </p>
+      <p>We’re here to help. Reach out to learn more about how Auxlia can support your journey.</p>
       <a href="mailto:hello@auxlia.com" class="contact-button">Get in touch</a>
     </section>
+
   </main>
 
-  <footer>
-    © 2025 Auxlia. All rights reserved.
-  </footer>
+
+  <!-- FOOTER -->
+<footer class="simple-footer">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+  <p>© 2025 Auxlia. All rights reserved.</p>
+</footer>
+
 </body>
+
 </html>
